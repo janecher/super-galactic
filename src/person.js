@@ -17,4 +17,9 @@ export class Person {
     const mars = 1.88;
     return Math.floor(this.age / mars);
   }
+
+  jupiterAge() {
+    const mars = 11.86;
+    return Math.floor(this.age / mars * 10) / 10;
+  }
 }
