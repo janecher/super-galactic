@@ -46,4 +46,27 @@ export class Person {
     const pluto = 250;
     return Math.floor(this.age / pluto * 1000) / 1000;
   }
+
+  timeLeft() {
+    let average = 70;
+    if(this.sport === 0) {
+      average -= 5;
+    } else if (this.sport <= 3) {
+      average += 5;
+    } else if (this.sport > 3) {
+      average += 10;
+    }
+    if(this.food === "healthy") {
+      average += 10;
+    } else if (this.food === "unhealthy") {
+      average -= 10;
+    }
+    if (this.smoking === true) {
+      average -= 7;
+    }
+    if (this.alcohol === true) {
+      average -= 7;
+    }
+    return average - this.age;
+  }
 }
