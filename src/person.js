@@ -27,4 +27,19 @@ export class Person {
     const saturn = 29.5;
     return Math.floor(this.age / saturn * 100) / 100;
   }
+
+  uranusAge() {
+    const uranus = 85;
+    return Math.floor(this.age / uranus * 100) / 100;
+  }
+
+  neptuneAge() {
+    const neptune = 162;
+    return Math.floor(this.age / neptune * 100) / 100;
+  }
+
+  plutoAge() {
+    const pluto = 250;
+    return Math.floor(this.age / pluto * 1000) / 1000;
+  }
 }
