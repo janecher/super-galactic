@@ -1,6 +1,10 @@
 export class Person {
-  constructor(age) {
+  constructor(age, sport, food, smoking, alcohol) {
     this.age = age;
+    this.sport = sport;
+    this.food = food;
+    this.smoking = smoking;
+    this.alcohol = alcohol;
   }
 
   mercuryAge() {
