@@ -12,17 +12,9 @@ export class Person {
     return Math.floor(age / mercury);
   }
 
-  mercuryAge() {
-    return this.mercury(this.age);
-  }
-
   venus(age) {
     const venus = 0.62;
     return Math.floor(age / venus);
-  }
-
-  venusAge() {
-    return this.venus(this.age);
   }
 
   mars(age) {
@@ -30,17 +22,9 @@ export class Person {
     return Math.floor(age / mars);
   }
 
-  marsAge() {
-    return this.mars(this.age);
-  }
-
   jupiter(age) {
     const jupiter = 11.86;
     return Math.floor(age / jupiter * 10) / 10;
-  }
-
-  jupiterAge() {
-    return this.jupiter(this.age);
   }
 
   saturn(age) {
@@ -48,17 +32,9 @@ export class Person {
     return Math.floor(age / saturn * 100) / 100;
   }
 
-  saturnAge() {
-    return this.saturn(this.age);
-  }
-
   uranus(age) {
     const uranus = 85;
     return Math.floor(age / uranus * 100) / 100;
-  }
-
-  uranusAge() {
-    return this.uranus(this.age);
   }
 
   neptune(age) {
@@ -66,17 +42,20 @@ export class Person {
     return Math.floor(age / neptune * 100) / 100;
   }
 
-  neptuneAge() {
-    return this.neptune(this.age);
-  }
-
   pluto(age) {
     const pluto = 250;
     return Math.floor(age / pluto * 1000) / 1000;
   }
 
-  plutoAge() {
-    return this.pluto(this.age);
+  ageOnPlanets() {
+    this.mercuryAge = this.mercury(this.age);
+    this.venusAge = this.venus(this.age);;
+    this.marsAge = this.mars(this.age);
+    this.jupiterAge = this.jupiter(this.age);
+    this.saturnAge = this.saturn(this.age)
+    this.uranusAge = this.uranus(this.age);
+    this.neptuneAge = this.neptune(this.age);
+    this.plutoAge = this.pluto(this.age);
   }
 
   timeLeft() {
@@ -101,5 +80,10 @@ export class Person {
     }
     return average - this.age;
   }
+
+  timeLeftOnPlanets() {
+
+  }
+
 
 }
