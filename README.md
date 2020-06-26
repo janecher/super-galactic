@@ -14,6 +14,7 @@ _Web app for calculating user's solar system age, depends on the planet. Calcula
 | Calculate person age in Mercury years | age = 34 | mercuryAge = 141 |
 | Calculate person age in Venus years | age = 34 | venusAge = 54 |
 | Calculate person age in Mars years | age = 34 | marsAge = 18 |
+| Calculate person age in Jupiter years | age = 34 | jupiterAge = 2.8 |
 
 ## Setup/Installation Requirements
 
