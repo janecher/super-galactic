@@ -89,4 +89,17 @@ describe('calculate time left', () => {
     expect(person2.timeLeft()).toEqual(65);
     expect(person3.timeLeft()).toEqual(1);
   });
+
+  test('should return number of years person left based on person lifestyle on different Planets', () => {
+    const person = new Person(34, 3, "middle", false, false);
+    person.timeLeftOnPlanets();
+    expect(person.timeLeftMercury).toEqual(170);
+    expect(person.timeLeftVenus).toEqual(66);
+    expect(person.timeLeftMars).toEqual(21);
+    expect(person.timeLeftJupiter).toEqual(3.4);
+    expect(person.timeLeftSaturn).toEqual(1.41);
+    expect(person.timeLeftUranus).toEqual(0.48);
+    expect(person.timeLeftNeptune).toEqual(0.25);
+    expect(person.timeLeftPluto).toEqual(0.164);
+  });
 });
