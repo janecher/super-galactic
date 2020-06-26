@@ -61,3 +61,15 @@ describe('calculate person age on different planets', () => {
     expect(person.plutoAge()).toEqual(0.136);
   });
 });
+
+describe('calculate time left', () => {
+
+  test('should return number of years person left based on person lifestyle', () => {
+    const person1 = new Person(34, 3, "middle", false, false);
+    const person2 = new Person(25, 5, "healthy", false, false);
+    const person3 = new Person(40, 0, "unhealthy", true, true);
+    expect(person1.timeLeft()).toEqual(41);
+    expect(person2.timeLeft()).toEqual(65);
+    expect(person3.timeLeft()).toEqual(1);
+  });
+});
