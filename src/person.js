@@ -81,6 +81,14 @@ export class Person {
     return average - this.age;
   }
 
+  isLifeExpectancyPassed(timeLeft) {
+    if(timeLeft < 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   timeLeftOnPlanets() {
     let ageLeft = this.timeLeft();
     this.timeLeftMercury = this.mercury(ageLeft);
@@ -92,6 +100,4 @@ export class Person {
     this.timeLeftNeptune = this.neptune(ageLeft);
     this.timeLeftPluto = this.pluto(ageLeft);
   }
-
-
 }
