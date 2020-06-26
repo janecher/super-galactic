@@ -29,4 +29,9 @@ describe('calculate person age on different planets', () => {
     const person = new Person(34);
     expect(person.jupiterAge()).toEqual(2.8);
   });
+
+  test('should calculate Saturn age', () => {
+    const person = new Person(34);
+    expect(person.saturnAge()).toEqual(1.15);
+  });
 });
