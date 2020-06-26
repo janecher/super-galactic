@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Galactic Age Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <h1>Super Galactic Age Calculator</h1>
+    </div>
+    <div class="user-input">
+      <h2>Find your age on other Planets</h2>
+      <p>Fill the form and also learn how many years left</p>
+      <form>
+        <div class="form-group">
+          <label for="age">Your age:</label>
+          <input id="age" class="form-control" type="number" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="sport">Number of sport times in a week:</label>
+          <input id="sport" class="form-control" type="number" min="0">
+        </div>
+        <div class="form-group">
+          <label for="food">Your food:</label>
+          <select class="form-control" id="food">
+            <option value="healthy">Healthy</option>
+            <option value="medium">Medium healthy</option>
+            <option value="unhealthy">Unhealthy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="smoking">Are you smoking:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="smoking" value="no" checked>
+              No
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="smoking" value="yes">
+              Yes
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="alcohol">Do you drink alcohol a lot?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="alcohol" value="no" checked>
+              No
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="alcohol" value="yes">
+              Yes
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="answer">
+      <h2>Your age on Planet Earth: <span id="earth-age"></span></h2>
+      <p id="earth-time-left"></p>
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          
+        </div>       
+      </div>
+    </div>
+  </div> 
+</body>
+</html>

@@ -6,7 +6,7 @@
 
 ## Description
 
-_Web app for calculating user's solar system age, depends on the planet. Calculate the user’s life expectancy, depends on user lifestyle._
+Web app for calculating user's solar system age, depends on the planet. Calculate the user’s life expectancy, depends on user lifestyle.
 
 ### Specification
 | Behavior | Input | Output|
@@ -32,14 +32,13 @@ _Web app for calculating user's solar system age, depends on the planet. Calcula
 * Do "npm install", then "npm run build" in the terminal
 * Do "npm run start" in the terminal to see the result in browser
 
-
 ## Known Bugs
 
 _No known bags_
 
 ## Support and contact details
 
-_Contact me at evgenya.chernaya@gmail.com_
+Contact me at _evgenya.chernaya@gmail.com_
 
 ## Technologies Used
 
