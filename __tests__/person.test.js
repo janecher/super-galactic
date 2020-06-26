@@ -23,42 +23,59 @@ describe('calculate person age on different planets', () => {
 
   test('should calculate Mercury age', () => {
     const person = new Person(34);
-    expect(person.mercuryAge()).toEqual(141);
+    expect(person.mercury(person.age)).toEqual(141);
   });
 
   test('should calculate Venus age', () => {
     const person = new Person(34);
-    expect(person.venusAge()).toEqual(54);
+    expect(person.venus(person.age)).toEqual(54);
   });
 
   test('should calculate Mars age', () => {
     const person = new Person(34);
-    expect(person.marsAge()).toEqual(18);
+    expect(person.mars(person.age)).toEqual(18);
   });
 
   test('should calculate Jupiter age', () => {
     const person = new Person(34);
-    expect(person.jupiterAge()).toEqual(2.8);
+    expect(person.jupiter(person.age)).toEqual(2.8);
   });
 
   test('should calculate Saturn age', () => {
     const person = new Person(34);
-    expect(person.saturnAge()).toEqual(1.17);
+    expect(person.saturn(person.age)).toEqual(1.17);
   });
 
   test('should calculate Uranus age', () => {
     const person = new Person(34);
-    expect(person.uranusAge()).toEqual(0.4);
+    expect(person.uranus(person.age)).toEqual(0.4);
   });
 
   test('should calculate Neptune age', () => {
     const person = new Person(34);
-    expect(person.neptuneAge()).toEqual(0.2);
+    expect(person.neptune(person.age)).toEqual(0.2);
   });
 
   test('should calculate Pluto age', () => {
     const person = new Person(34);
-    expect(person.plutoAge()).toEqual(0.136);
+    expect(person.pluto(person.age)).toEqual(0.136);
+  });
+});
+
+describe('create and calculate Person agePlanet properties', () => {
+
+  test('should return object with age property', () => {
+    const person = new Person(34);
+    expect(person.age).toBe(34);
+  });
+
+  test('should return object with all Person properties', () => {
+    const person = new Person(34);
+    person.ageOnPlanets();
+    expect(person.mercuryAge).toEqual(141);
+    expect(person.jupiterAge).toEqual(2.8);
+    expect(person.uranusAge).toEqual(0.4);
+    expect(person.plutoAge).toEqual(0.136);
   });
 });
 
