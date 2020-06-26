@@ -19,7 +19,12 @@ export class Person {
   }
 
   jupiterAge() {
-    const mars = 11.86;
-    return Math.floor(this.age / mars * 10) / 10;
+    const jupiter = 11.86;
+    return Math.floor(this.age / jupiter * 10) / 10;
+  }
+
+  saturnAge() {
+    const saturn = 29.5;
+    return Math.floor(this.age / saturn * 100) / 100;
   }
 }
