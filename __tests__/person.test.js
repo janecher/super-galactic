@@ -20,8 +20,13 @@ describe('calculate person age on different planets', () => {
     expect(person.venusAge()).toEqual(54);
   });
 
-  test('should calculate Venus age', () => {
+  test('should calculate Mars age', () => {
     const person = new Person(34);
     expect(person.marsAge()).toEqual(18);
+  });
+
+  test('should calculate Jupiter age', () => {
+    const person = new Person(34);
+    expect(person.jupiterAge()).toEqual(2.8);
   });
 });
