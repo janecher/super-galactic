@@ -12,4 +12,9 @@ export class Person {
     const venus = 0.62;
     return Math.floor(this.age / venus);
   }
+
+  marsAge() {
+    const mars = 1.88;
+    return Math.floor(this.age / mars);
+  }
 }
