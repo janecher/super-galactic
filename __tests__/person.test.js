@@ -42,7 +42,7 @@ describe('calculate person age on different planets', () => {
 
   test('should calculate Neptune age', () => {
     const person = new Person(34);
-    expect(person.neptuneAge()).toEqual(0.21);
+    expect(person.neptuneAge()).toEqual(0.2);
   });
 
   test('should calculate Pluto age', () => {
