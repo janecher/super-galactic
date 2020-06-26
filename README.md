@@ -23,6 +23,7 @@ _Web app for calculating user's solar system age, depends on the planet. Calcula
 | Create Person class object with lifestyles properties | let person = new Person(age, sport, food, smoking, alcohol);  | person {34, 3, "middle", false, false} |
 | Calculate time left for person on Earth based on person lifestyle | let person = new Person(34, 3, "middle", false, false);  | 41 |
 | Calculate age of person on each planet in one function | let person = new Person(34);  | mercuryAge = 141, venusAge = 54, marsAge = 18, jupiterAge = 2.8, saturnAge = 1.17, uranusAge = 0.4, neptuneAge = 0.2, plutoAge = 0.136 |
+| Calculate time left for person on each Planet based on person lifestyle | let person = new Person(34, 3, "middle", false, false);  | timeLeftMercury = 170, timeLeftVenus = 66, timeLeftMars = 21, this.timeLeftJupiter = 3.4, timeLeftSaturn = 1.41, timeLeftUranus = 0.48, timeLeftNeptune = 0.25, timeLeftPluto = 0.164; |
 
 ## Setup/Installation Requirements
 
