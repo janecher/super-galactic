@@ -12,7 +12,7 @@ _Web app for calculating user's solar system age, depends on the planet. Calcula
 | Spec | Input | Output |
 | Create Person class object with property age | let person = new Person(age);  | person {this.age = age} |
 | Calculate person age in Mercury years | age = 34 | mercuryAge = 141 |
-
+| Calculate person age in Venus years | age = 34 | mercuryAge = 54 |
 
 ## Setup/Installation Requirements
 
