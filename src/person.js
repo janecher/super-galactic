@@ -7,44 +7,76 @@ export class Person {
     this.alcohol = alcohol;
   }
 
-  mercuryAge() {
+  mercury(age) {
     const mercury = 0.24;
-    return Math.floor(this.age / mercury);
+    return Math.floor(age / mercury);
+  }
+
+  mercuryAge() {
+    return this.mercury(this.age);
+  }
+
+  venus(age) {
+    const venus = 0.62;
+    return Math.floor(age / venus);
   }
 
   venusAge() {
-    const venus = 0.62;
-    return Math.floor(this.age / venus);
+    return this.venus(this.age);
+  }
+
+  mars(age) {
+    const mars = 1.88;
+    return Math.floor(age / mars);
   }
 
   marsAge() {
-    const mars = 1.88;
-    return Math.floor(this.age / mars);
+    return this.mars(this.age);
+  }
+
+  jupiter(age) {
+    const jupiter = 11.86;
+    return Math.floor(age / jupiter * 10) / 10;
   }
 
   jupiterAge() {
-    const jupiter = 11.86;
-    return Math.floor(this.age / jupiter * 10) / 10;
+    return this.jupiter(this.age);
+  }
+
+  saturn(age) {
+    const saturn = 29;
+    return Math.floor(age / saturn * 100) / 100;
   }
 
   saturnAge() {
-    const saturn = 29;
-    return Math.floor(this.age / saturn * 100) / 100;
+    return this.saturn(this.age);
+  }
+
+  uranus(age) {
+    const uranus = 85;
+    return Math.floor(age / uranus * 100) / 100;
   }
 
   uranusAge() {
-    const uranus = 85;
-    return Math.floor(this.age / uranus * 100) / 100;
+    return this.uranus(this.age);
+  }
+
+  neptune(age) {
+    const neptune = 162;
+    return Math.floor(age / neptune * 100) / 100;
   }
 
   neptuneAge() {
-    const neptune = 162;
-    return Math.floor(this.age / neptune * 100) / 100;
+    return this.neptune(this.age);
+  }
+
+  pluto(age) {
+    const pluto = 250;
+    return Math.floor(age / pluto * 1000) / 1000;
   }
 
   plutoAge() {
-    const pluto = 250;
-    return Math.floor(this.age / pluto * 1000) / 1000;
+    return this.pluto(this.age);
   }
 
   timeLeft() {
@@ -69,4 +101,5 @@ export class Person {
     }
     return average - this.age;
   }
+
 }
