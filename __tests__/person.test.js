@@ -102,4 +102,11 @@ describe('calculate time left', () => {
     expect(person.timeLeftNeptune).toEqual(0.25);
     expect(person.timeLeftPluto).toEqual(0.164);
   });
+
+  test('should return true if user has already surpassed the average life expectancy', () => {
+    const timeLeft1 = 45;
+    const timeLeft2 = -5;
+    expect(ifLifeExpectancyPassed(timeLeft1)).toEqual(false);
+    expect(ifLifeExpectancyPassed(timeLeft2)).toEqual(true);
+  });
 });
