@@ -104,9 +104,11 @@ describe('calculate time left', () => {
   });
 
   test('should return true if user has already surpassed the average life expectancy', () => {
-    const timeLeft1 = 45;
-    const timeLeft2 = -5;
-    expect(ifLifeExpectancyPassed(timeLeft1)).toEqual(false);
-    expect(ifLifeExpectancyPassed(timeLeft2)).toEqual(true);
+    const person1 = new Person(34, 3, "middle", false, false);
+    const person2 = new Person(100, 3, "middle", true, false);
+    const first= person1.isLifeExpectancyPassed(person1.timeLeft());
+    const second = person2.isLifeExpectancyPassed(person2.timeLeft());
+    expect(first).toEqual(false);
+    expect(second).toEqual(true);
   });
 });
