@@ -15,10 +15,10 @@ _Web app for calculating user's solar system age, depends on the planet. Calcula
 | Calculate person age in Venus years | age = 34 | venusAge = 54 |
 | Calculate person age in Mars years | age = 34 | marsAge = 18 |
 | Calculate person age in Jupiter years | age = 34 | jupiterAge = 2.8 |
-| Calculate person age in Saturn years | age = 34 | saturnAge = 1.16 | 29.5
-| Calculate person age in Uranus years | age = 34 | uranusAge = 0.4 | 85
-| Calculate person age in Neptune years | age = 34 | neptuneAge = 0.21 | 162
-| Calculate person age in Pluto years | age = 34 | plutoAge = 0.136 | 250
+| Calculate person age in Saturn years | age = 34 | saturnAge = 1.17 |
+| Calculate person age in Uranus years | age = 34 | uranusAge = 0.4 |
+| Calculate person age in Neptune years | age = 34 | neptuneAge = 0.2 | 
+| Calculate person age in Pluto years | age = 34 | plutoAge = 0.136 | 
 
 ## Setup/Installation Requirements
 

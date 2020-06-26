@@ -24,7 +24,7 @@ export class Person {
   }
 
   saturnAge() {
-    const saturn = 29.5;
+    const saturn = 29;
     return Math.floor(this.age / saturn * 100) / 100;
   }
 
