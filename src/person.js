@@ -49,10 +49,10 @@ export class Person {
 
   ageOnPlanets() {
     this.mercuryAge = this.mercury(this.age);
-    this.venusAge = this.venus(this.age);;
+    this.venusAge = this.venus(this.age);
     this.marsAge = this.mars(this.age);
     this.jupiterAge = this.jupiter(this.age);
-    this.saturnAge = this.saturn(this.age)
+    this.saturnAge = this.saturn(this.age);
     this.uranusAge = this.uranus(this.age);
     this.neptuneAge = this.neptune(this.age);
     this.plutoAge = this.pluto(this.age);
