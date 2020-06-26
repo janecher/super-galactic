@@ -1,6 +1,29 @@
+body {
+  background-color: black;
+}
+
 .jumbotron {
   background-image: url("assets/images/space.jpg");
   text-align: center;
   font-size: 24px;
   color: white;
+  margin-bottom: 0px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.user-input, .answer {
+  background-color: #ffe6e6;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
 }
