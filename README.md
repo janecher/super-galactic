@@ -1,39 +1,45 @@
-# _PROJECT NAME_
+# Super Galactic Age Calculator
 
-#### _SHORT DESCR_
+#### App for calculating user age on different planets, 06/26/2020
 
-#### By _**YOUR NAME HERE**_
+#### By _**Evgeniya Chernaya**_
 
 ## Description
 
-_Long deiscription._
+_Web app for calculating user's solar system age, depends on the planet. Calculate the user’s life expectancy, depends on user lifestyle._
 
 ### Specs
 | Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
+| Create Person class object with property age | let person = new Person(age);  | person {this.age = age} |
 
 
 ## Setup/Installation Requirements
 
-* _Visit the following link: _
-* _Clone the repository to your desired directory._
-* _OR_
-* _Visit here: _
+* Clone the repository to your desired directory (git clone )
+* Do "npm install", then "npm run build" in the terminal
+* Do "npm run start" in the terminal to see the result in browser
 
 
 ## Known Bugs
 
-_ _
+_No known bags_
+
 ## Support and contact details
 
-_Contact me at...._
+_Contact me at evgenya.chernaya@gmail.com_
 
 ## Technologies Used
 
-_Technology!_
+  * HTML
+  * CSS
+  * JavaScript
+  * JQuery
+  * Bootstrap
+  * Webpack
+  * Jest
 
 ### License
 
-*GPL license distribution*
+_This software is licensed under the MIT license_
 
-Copyright (c) 2020 **_Your name(s)_**
+Copyright (c) 2020 **Evgeniya Chernaya**
