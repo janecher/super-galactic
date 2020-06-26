@@ -1,3 +1,5 @@
+import { Person } from './../src/person.js';
+
 describe('create Person object', () => {
   test('should return object with age property', () => {
     const person = new Person(34);
