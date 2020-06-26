@@ -82,7 +82,15 @@ export class Person {
   }
 
   timeLeftOnPlanets() {
-
+    let ageLeft = this.timeLeft();
+    this.timeLeftMercury = this.mercury(ageLeft);
+    this.timeLeftVenus = this.venus(ageLeft);
+    this.timeLeftMars = this.mars(ageLeft);
+    this.timeLeftJupiter = this.jupiter(ageLeft);
+    this.timeLeftSaturn = this.saturn(ageLeft);
+    this.timeLeftUranus = this.uranus(ageLeft);
+    this.timeLeftNeptune = this.neptune(ageLeft);
+    this.timeLeftPluto = this.pluto(ageLeft);
   }
 
 
