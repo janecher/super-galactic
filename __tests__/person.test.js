@@ -6,6 +6,17 @@ describe('create Person object', () => {
     const person = new Person(34);
     expect(person.age).toBe(34);
   });
+
+  test('should return object with all Person properties', () => {
+    const person = new Person(34, 3, "middle", false, false);
+    expect(person).toMatchObject({
+      age: 34,
+      sport: 3,
+      food: "middle",
+      smoking: false,
+      alcohol: false
+    });
+  });
 });
 
 describe('calculate person age on different planets', () => {
