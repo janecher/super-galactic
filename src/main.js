@@ -14,22 +14,22 @@ function showInfo(person) {
   let uranusInfo = `<h4>Uranus</h4><p>Age: ${person.uranus(person.age)}</p>`;
   let neptuneInfo = `<h4>Neptune</h4><p>Age: ${person.neptune(person.age)}</p>`;
   let plutoInfo = `<h4>Pluto</h4><p>Age: ${person.pluto(person.age)}</p>`;
-  if(!person.sport) {
+  if(isNaN(person.sport)) {
     $(".earth-time-left").hide();
   } else {
-    mercuryInfo += `<p>Time left: ${person.mercury(timeLeft)}</p>`;
-    venusInfo += `<p>Time left: ${person.venus(timeLeft)}</p>`;
-    marsInfo += `<p>Time left: ${person.mars(timeLeft)}</p>`;
-    jupiterInfo += `<p>Time left: ${person.jupiter(timeLeft)}</p>`;
-    saturnInfo += `<p>Time left: ${person.saturn(timeLeft)}</p>`;
-    uranusInfo += `<p>Time left: ${person.uranus(timeLeft)}</p>`;
-    neptuneInfo += `<p>Time left: ${person.neptune(timeLeft)}</p>`;
-    plutoInfo += `<p>Time left: ${person.pluto(timeLeft)}</p>`;
     if(person.isLifeExpectancyPassed(timeLeft)) {
-      $(".earth-time-left").html(`<span>Hm... You should already left this Planet <span id="earth-time-left">${Math.abs(timeLeft)}</span> years ago</span>`);
+      $(".earth-time-left").html(`<span>Hm... You should already left Planet Earth <span id="earth-time-left">${Math.abs(timeLeft)}</span> years ago</span>`);
       $(".earth-time-left").show();
     } else {
       $(".earth-time-left").html(`<span>Your lifestyle will allow you to stay on Earth for <span id="earth-time-left">${timeLeft}</span> years</span>`);
+      mercuryInfo += `<p>Time left: ${person.mercury(timeLeft)}</p>`;
+      venusInfo += `<p>Time left: ${person.venus(timeLeft)}</p>`;
+      marsInfo += `<p>Time left: ${person.mars(timeLeft)}</p>`;
+      jupiterInfo += `<p>Time left: ${person.jupiter(timeLeft)}</p>`;
+      saturnInfo += `<p>Time left: ${person.saturn(timeLeft)}</p>`;
+      uranusInfo += `<p>Time left: ${person.uranus(timeLeft)}</p>`;
+      neptuneInfo += `<p>Time left: ${person.neptune(timeLeft)}</p>`;
+      plutoInfo += `<p>Time left: ${person.pluto(timeLeft)}</p>`;
       $(".earth-time-left").show();
     }
   }
