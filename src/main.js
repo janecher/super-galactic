@@ -26,14 +26,17 @@ $(document).ready(function(){
     $("#earth-age").text(person.age);
     let timeLeft = person.timeLeft();
     if(person.isLifeExpectancyPassed(timeLeft)) {
-      $(".earth-time-left").html(`<span>Hm... You should already left this Planet ${Math.abs(timeLeft)} years ago</span>`);
+      $(".earth-time-left").html(`<span>Hm... You should already left this Planet <span id="negative-time-left">${Math.abs(timeLeft)}</span> years ago</span>`);
     } else {
       $("#earth-time-left").text(timeLeft);
     }
     $("#age").val("");
-    $("#sport").val();
+    $("#sport").val("");
     $(".user-input").hide();
     $(".answer").show();
-    console.log(person);
+  });
+  $("#back").click(function(){
+    $(".user-input").show();
+    $(".answer").hide();
   });
 });

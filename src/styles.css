@@ -32,3 +32,16 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+
+.planet img {
+  width: 100%;
+  height: auto;
+}
+
+#earth-age, #earth-time-left, #negative-time-left {
+  font-weight: bold;
+}
+
+.row {
+  margin-bottom: 20px;
+}
