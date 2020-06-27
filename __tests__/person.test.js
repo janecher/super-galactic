@@ -62,23 +62,6 @@ describe('calculate person age on different planets', () => {
   });
 });
 
-describe('create and calculate Person agePlanet properties', () => {
-
-  test('should return object with age property', () => {
-    const person = new Person(34);
-    expect(person.age).toBe(34);
-  });
-
-  test('should return object with all Person properties', () => {
-    const person = new Person(34);
-    person.ageOnPlanets();
-    expect(person.mercuryAge).toEqual(141);
-    expect(person.jupiterAge).toEqual(2.8);
-    expect(person.uranusAge).toEqual(0.4);
-    expect(person.plutoAge).toEqual(0.136);
-  });
-});
-
 describe('calculate time left', () => {
 
   test('should return number of years person left based on person lifestyle', () => {
@@ -92,15 +75,14 @@ describe('calculate time left', () => {
 
   test('should return number of years person left based on person lifestyle on different Planets', () => {
     const person = new Person(34, 3, "middle", false, false);
-    person.timeLeftOnPlanets();
-    expect(person.timeLeftMercury).toEqual(170);
-    expect(person.timeLeftVenus).toEqual(66);
-    expect(person.timeLeftMars).toEqual(21);
-    expect(person.timeLeftJupiter).toEqual(3.4);
-    expect(person.timeLeftSaturn).toEqual(1.41);
-    expect(person.timeLeftUranus).toEqual(0.48);
-    expect(person.timeLeftNeptune).toEqual(0.25);
-    expect(person.timeLeftPluto).toEqual(0.164);
+    expect(person.mercury(person.timeLeft())).toEqual(170);
+    expect(person.venus(person.timeLeft())).toEqual(66);
+    expect(person.mars(person.timeLeft())).toEqual(21);
+    expect(person.jupiter(person.timeLeft())).toEqual(3.4);
+    expect(person.saturn(person.timeLeft())).toEqual(1.41);
+    expect(person.uranus(person.timeLeft())).toEqual(0.48);
+    expect(person.neptune(person.timeLeft())).toEqual(0.25);
+    expect(person.pluto(person.timeLeft())).toEqual(0.164);
   });
 
   test('should return true if user has already surpassed the average life expectancy', () => {
