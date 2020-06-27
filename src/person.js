@@ -7,55 +7,40 @@ export class Person {
     this.alcohol = alcohol;
   }
 
+  planetAge(coefficientPlanet, coefficientRound, age) {
+    return Math.floor(age / coefficientPlanet * coefficientRound) / coefficientRound;
+  }
+
   mercury(age) {
-    const mercury = 0.24;
-    return Math.floor(age / mercury);
+    return this.planetAge(0.24, 1, age);
   }
 
   venus(age) {
-    const venus = 0.62;
-    return Math.floor(age / venus);
+    return this.planetAge(0.62, 1, age);
   }
 
   mars(age) {
-    const mars = 1.88;
-    return Math.floor(age / mars);
+    return this.planetAge(1.88, 1, age);
   }
 
   jupiter(age) {
-    const jupiter = 11.86;
-    return Math.floor(age / jupiter * 10) / 10;
+    return this.planetAge(11.86, 10, age);
   }
 
   saturn(age) {
-    const saturn = 29;
-    return Math.floor(age / saturn * 100) / 100;
+    return this.planetAge(29, 100, age);
   }
 
   uranus(age) {
-    const uranus = 85;
-    return Math.floor(age / uranus * 100) / 100;
+    return this.planetAge(85, 100, age);
   }
 
   neptune(age) {
-    const neptune = 162;
-    return Math.floor(age / neptune * 100) / 100;
+    return this.planetAge(162, 100, age);
   }
 
   pluto(age) {
-    const pluto = 250;
-    return Math.floor(age / pluto * 1000) / 1000;
-  }
-
-  ageOnPlanets() {
-    this.mercuryAge = this.mercury(this.age);
-    this.venusAge = this.venus(this.age);
-    this.marsAge = this.mars(this.age);
-    this.jupiterAge = this.jupiter(this.age);
-    this.saturnAge = this.saturn(this.age);
-    this.uranusAge = this.uranus(this.age);
-    this.neptuneAge = this.neptune(this.age);
-    this.plutoAge = this.pluto(this.age);
+    return this.planetAge(250, 1000, age);
   }
 
   timeLeft() {
@@ -87,17 +72,5 @@ export class Person {
     } else {
       return false;
     }
-  }
-
-  timeLeftOnPlanets() {
-    let ageLeft = this.timeLeft();
-    this.timeLeftMercury = this.mercury(ageLeft);
-    this.timeLeftVenus = this.venus(ageLeft);
-    this.timeLeftMars = this.mars(ageLeft);
-    this.timeLeftJupiter = this.jupiter(ageLeft);
-    this.timeLeftSaturn = this.saturn(ageLeft);
-    this.timeLeftUranus = this.uranus(ageLeft);
-    this.timeLeftNeptune = this.neptune(ageLeft);
-    this.timeLeftPluto = this.pluto(ageLeft);
   }
 }
