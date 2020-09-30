@@ -8,7 +8,11 @@
 
 Web app for calculating user's solar system age, depends on the planet. Calculate the user’s life expectancy, depends on user lifestyle.
 
+<img src="form.png"/><br>
+
 ### Specification
+
+<img src="planets.png"/><br>
 | Behavior | Input | Output|
 |----------|-------|-------|
 | Create Person class object with property age | let person = new Person(age);  | person {this.age = age} |
